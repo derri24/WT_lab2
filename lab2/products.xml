@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="18.0.2.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="products.Fridge" id="Fridge0">
+    <void class="products.Product" method="getField">
+     <string>Price</string>
+     <void method="set">
+      <object idref="Fridge0"/>
+      <int>55</int>
+     </void>
+    </void>
+    <void class="products.Product" method="getField">
+     <string>Name</string>
+     <void method="set">
+      <object idref="Fridge0"/>
+      <string>Fridge, Atlant 2020</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="products.Kettle" id="Kettle0">
+    <void class="products.Product" method="getField">
+     <string>Price</string>
+     <void method="set">
+      <object idref="Kettle0"/>
+      <int>16</int>
+     </void>
+    </void>
+    <void class="products.Product" method="getField">
+     <string>Name</string>
+     <void method="set">
+      <object idref="Kettle0"/>
+      <string>Kettle, Horizon 293</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="products.WashingMachine" id="WashingMachine0">
+    <void class="products.Product" method="getField">
+     <string>Price</string>
+     <void method="set">
+      <object idref="WashingMachine0"/>
+      <int>22</int>
+     </void>
+    </void>
+    <void class="products.Product" method="getField">
+     <string>Name</string>
+     <void method="set">
+      <object idref="WashingMachine0"/>
+      <string>Washing machine, LG 2003</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="products.VacuumCleaner" id="VacuumCleaner0">
+    <void class="products.Product" method="getField">
+     <string>Price</string>
+     <void method="set">
+      <object idref="VacuumCleaner0"/>
+      <int>14</int>
+     </void>
+    </void>
+    <void class="products.Product" method="getField">
+     <string>Name</string>
+     <void method="set">
+      <object idref="VacuumCleaner0"/>
+      <string>Vacuum cleaner, Samsung</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="products.Kettle" id="Kettle1">
+    <void class="products.Product" method="getField">
+     <string>Price</string>
+     <void method="set">
+      <object idref="Kettle1"/>
+      <int>19</int>
+     </void>
+    </void>
+    <void class="products.Product" method="getField">
+     <string>Name</string>
+     <void method="set">
+      <object idref="Kettle1"/>
+      <string>Kettle, Tefal 234</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="products.Kettle" id="Kettle2">
+    <void class="products.Product" method="getField">
+     <string>Price</string>
+     <void method="set">
+      <object idref="Kettle2"/>
+      <int>20</int>
+     </void>
+    </void>
+    <void class="products.Product" method="getField">
+     <string>Name</string>
+     <void method="set">
+      <object idref="Kettle2"/>
+      <string>Kettle, Tefal 7351</string>
+     </void>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
