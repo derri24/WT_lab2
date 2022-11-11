@@ -2,7 +2,7 @@ package products;
 
 /**
  * Класс, описывающий чайник
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public class Kettle extends Product {
 
@@ -26,6 +26,13 @@ public class Kettle extends Product {
     private int volume;
 
     /**
+     * Функция получения материала {@link Kettle}
+     */
+    public String getMaterial() {
+        return material;
+    }
+
+    /**
      * Процедура определения материала {@link Kettle#material}
      * @param material - материал
      */
@@ -33,6 +40,12 @@ public class Kettle extends Product {
         this.material = material;
     }
 
+    /**
+     * Функция получения цвета {@link Kettle}
+     */
+    public String getColor() {
+        return color;
+    }
     /**
      * Процедура определения цвета {@link Kettle#color}
      * @param color - цвет
@@ -42,11 +55,25 @@ public class Kettle extends Product {
     }
 
     /**
+     * Функция получения типа чайника {@link Kettle}
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
      * Процедура определения типа чайника {@link Kettle#type}
      * @param type - тип чайника
      */
     public void setType(String type) {
         this.type = type;
+    }
+
+    /**
+     * Функция получения оъема {@link Kettle}
+     */
+    public int getVolume() {
+        return volume;
     }
 
     /**

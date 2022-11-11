@@ -7,17 +7,17 @@ import java.util.ArrayList;
 
 /**
  * Класс для работы с товарами, реализующий интерфейс {@link BaseProductService}
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public class ProductService implements BaseProductService {
     /** Поле списка продуктов */
-    private ArrayList<Product> products;
+    private final ArrayList<Product> products;
 
     /**
      * Конструктор - создание нового объекта
      * @see ProductService#ProductService()
      */
-    public ProductService() throws FileNotFoundException {
+    public ProductService() {
         BaseProductRepository baseProductRepository = new XmlProductRepository();
         products = baseProductRepository.readAll();
     }
@@ -51,4 +51,5 @@ public class ProductService implements BaseProductService {
         }
         return cheapestProduct;
     }
+
 }

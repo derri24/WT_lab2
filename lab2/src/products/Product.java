@@ -2,7 +2,7 @@ package products;
 
 /**
  * Класс, описывающий товар
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public class Product {
     /**
@@ -26,5 +26,19 @@ public class Product {
      */
     public String getName() {
         return Name;
+    }
+
+    /**
+     * Функция определения цены {@link Product}
+     */
+    public void setPrice(int price) {
+         this.Price = price;
+    }
+
+    /**
+     * Функция определения названия {@link Product}
+     */
+    public void setName(String name) {
+        this.Name = name;
     }
 }

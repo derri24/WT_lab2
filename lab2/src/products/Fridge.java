@@ -2,7 +2,7 @@ package products;
 
 /**
  * Класс, описывающий холодильник
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public class Fridge extends Product {
     /**
@@ -23,11 +23,25 @@ public class Fridge extends Product {
     private int noiseLevel;
 
     /**
+     * Функция получения высоты {@link Fridge}
+     */
+    public int getHeight() {
+        return height;
+    }
+
+    /**
      * Процедура определения высоты холодильника {@link Fridge#height}
      * @param height - высота холодильника
      */
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    /**
+     * Функция получения ширины {@link Fridge}
+     */
+    public int getWidth() {
+        return width;
     }
 
     /**
@@ -39,11 +53,25 @@ public class Fridge extends Product {
     }
 
     /**
+     * Функция получения веса {@link Fridge}
+     */
+    public int getWeight() {
+        return weight;
+    }
+
+    /**
      * Процедура определения веса холодильника {@link Fridge#weight}
      * @param weight - вес холодильника
      */
     public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    /**
+     * Функция получения уровня шума {@link Fridge}
+     */
+    public int getNoiseLevel() {
+        return noiseLevel;
     }
 
     /**
@@ -53,7 +81,6 @@ public class Fridge extends Product {
     public void setNoiseLevel(int noiseLevel) {
         this.noiseLevel = noiseLevel;
     }
-
 
     /**
      * Функиция приведения холодильника к строке {@link Fridge}

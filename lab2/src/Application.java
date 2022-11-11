@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  * Класс для отображения списка чайников и самого дешевого товара
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public class Application {
     /**
@@ -27,7 +27,7 @@ public class Application {
     /**
      * Главная процедура приложения {@link Application}
      */
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         BaseProductService baseProductService = new ProductService();
 
         var kettles = baseProductService.findAllKettles();

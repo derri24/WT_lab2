@@ -5,16 +5,16 @@ import java.util.ArrayList;
 
 /**
  * Интерфейс для чтения, создания товаров
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public interface BaseProductRepository {
      /**
       * Функция интерфейса чтения всех товаров {@link BaseProductRepository}
       * @return возвращает список товаров
       */
-     ArrayList<Product> readAll() throws FileNotFoundException;
+     ArrayList<Product> readAll();
      /**
       * Процедура интерфейса создания товаров {@link BaseProductRepository}
       */
-     void create(ArrayList<Product> products) throws FileNotFoundException;
+     void create(ArrayList<Product> products);
 }

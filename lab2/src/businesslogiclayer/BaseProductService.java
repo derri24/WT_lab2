@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  * Интерфейс для работы с товарами
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public interface BaseProductService {
     /**

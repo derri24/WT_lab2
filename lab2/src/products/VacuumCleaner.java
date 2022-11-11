@@ -2,7 +2,7 @@ package products;
 
 /**
  * Класс, описывающий пылесос
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 
 public class VacuumCleaner extends Product {
@@ -26,12 +26,28 @@ public class VacuumCleaner extends Product {
      */
     private int filteringLevels;
 
+
+    /**
+     * Функция получения цвета {@link VacuumCleaner}
+     */
+    public String getColor() {
+        return color;
+    }
+
     /**
      * Процедура определения цвета пылесоса {@link VacuumCleaner#color}
      * @param color - количество режимов
      */
     public void setColor(String color) {
         this.color = color;
+    }
+
+
+    /**
+     * Функция получения типа чистки {@link VacuumCleaner}
+     */
+    public String getTypeOfCleaning() {
+        return typeOfCleaning;
     }
 
     /**
@@ -46,8 +62,23 @@ public class VacuumCleaner extends Product {
      * Процедура определения длины шнура {@link VacuumCleaner#cordLength}
      * @param cordLength - количество режимов
      */
+
+
+    /**
+     * Функция получения длины шнура {@link VacuumCleaner}
+     */
+    public int getCordLength() {
+        return cordLength;
+    }
     public void setCordLength(int cordLength) {
         this.cordLength = cordLength;
+    }
+
+    /**
+     * Функция получения количества режимов {@link VacuumCleaner}
+     */
+    public int getFilteringLevels() {
+        return filteringLevels;
     }
 
     /**

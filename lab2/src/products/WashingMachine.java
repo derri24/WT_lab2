@@ -2,7 +2,7 @@ package products;
 
 /**
  * Класс, описывающий стиральную машину
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public class WashingMachine extends Product {
     /**
@@ -23,6 +23,13 @@ public class WashingMachine extends Product {
     private int waterConsumption;
 
     /**
+     * Функция получения объема барабана {@link WashingMachine}
+     */
+    public int getDrumVolume() {
+        return drumVolume;
+    }
+
+    /**
      * Процедура определения объема барабана {@link WashingMachine#drumVolume}
      * @param drumVolume - объем барабана
      */
@@ -30,29 +37,48 @@ public class WashingMachine extends Product {
         this.drumVolume = drumVolume;
     }
 
+
+    /**
+     * Функция получения количества режимов {@link WashingMachine}
+     */
+    public int getCountOfModes() {
+        return countOfModes;
+    }
+
     /**
      * Процедура определения количества режимов {@link WashingMachine#countOfModes}
      * @param countOfModes - количество режимов
      */
-
     public void setCountOfModes(int countOfModes) {
         this.countOfModes = countOfModes;
+    }
+
+    /**
+     * Функция получения энергопотребления {@link WashingMachine}
+     */
+    public int getEnergyConsumption() {
+        return energyConsumption;
     }
 
     /**
      * Процедура определения энергопотребления {@link WashingMachine#energyConsumption}
      * @param energyConsumption - энергопотребление
      */
-
     public void setEnergyConsumption(int energyConsumption) {
         this.energyConsumption = energyConsumption;
+    }
+
+    /**
+     * Функция получения потребления воды {@link WashingMachine}
+     */
+    public int getWaterConsumption() {
+        return waterConsumption;
     }
 
     /**
      * Процедура определения потребления воды {@link WashingMachine#waterConsumption}
      * @param waterConsumption - потребление воды
      */
-
     public void setWaterConsumption(int waterConsumption) {
         this.waterConsumption = waterConsumption;
     }

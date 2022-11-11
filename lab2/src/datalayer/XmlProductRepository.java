@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  * Класс для для чтения, создания товаров, реализующий интерфейс {@link BaseProductRepository}
- * @autor Дарья Герасимович
+ * @author Дарья Герасимович
  */
 public class XmlProductRepository implements BaseProductRepository {
     /**
@@ -27,22 +27,31 @@ public class XmlProductRepository implements BaseProductRepository {
      * @return возвращает список товаров
      */
     @Override
-    public ArrayList<Product> readAll() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream(path);
-        java.beans.XMLDecoder xmlDecoder = new java.beans.XMLDecoder(fileInputStream);
-        var products = xmlDecoder.readObject();
-        xmlDecoder.close();
-        return (ArrayList<Product>)products;
+    public ArrayList<Product> readAll()  {
+        try{
+            FileInputStream fileInputStream = new FileInputStream(path);
+            java.beans.XMLDecoder xmlDecoder = new java.beans.XMLDecoder(fileInputStream);
+            var products = xmlDecoder.readObject();
+            xmlDecoder.close();
+            return (ArrayList<Product>)products;
+        }
+        catch (FileNotFoundException ex){
+            return new ArrayList<>();
+        }
     }
 
     /**
      * Реализация процедуры интерфейса для создания товаров {@link XmlProductRepository}
      */
     @Override
-    public void create(ArrayList<Product> products) throws FileNotFoundException {
-        FileOutputStream fileOutputStream = new FileOutputStream(path);
-        java.beans.XMLEncoder xmlEncoder = new java.beans.XMLEncoder(fileOutputStream);
-        xmlEncoder.writeObject(products);
-        xmlEncoder.close();
+    public void create(ArrayList<Product> products) {
+        try{
+            FileOutputStream fileOutputStream = new FileOutputStream(path);
+            java.beans.XMLEncoder   xmlEncoder = new java.beans.XMLEncoder(fileOutputStream);
+            xmlEncoder.writeObject(products);
+            xmlEncoder.close();
+        }
+        catch(Exception ex){
+        }
     }
 }
