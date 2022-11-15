@@ -26,7 +26,7 @@ public class XmlProductRepository implements BaseProductRepository {
      * Реализация функции интерфейса для чтения всех товаров {@link XmlProductRepository}
      * @return возвращает список товаров
      */
-    @Override
+
     public ArrayList<Product> readAll()  {
         try{
             FileInputStream fileInputStream = new FileInputStream(path);
@@ -43,7 +43,6 @@ public class XmlProductRepository implements BaseProductRepository {
     /**
      * Реализация процедуры интерфейса для создания товаров {@link XmlProductRepository}
      */
-    @Override
     public void create(ArrayList<Product> products) {
         try{
             FileOutputStream fileOutputStream = new FileOutputStream(path);
