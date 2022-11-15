@@ -32,10 +32,11 @@ public class XmlProductRepository implements BaseProductRepository {
             FileInputStream fileInputStream = new FileInputStream(path);
             java.beans.XMLDecoder xmlDecoder = new java.beans.XMLDecoder(fileInputStream);
             var products = xmlDecoder.readObject();
+            fileInputStream.close();
             xmlDecoder.close();
             return (ArrayList<Product>)products;
         }
-        catch (FileNotFoundException ex){
+        catch (Exception ex){
             return new ArrayList<>();
         }
     }
@@ -48,6 +49,7 @@ public class XmlProductRepository implements BaseProductRepository {
             FileOutputStream fileOutputStream = new FileOutputStream(path);
             java.beans.XMLEncoder   xmlEncoder = new java.beans.XMLEncoder(fileOutputStream);
             xmlEncoder.writeObject(products);
+            fileOutputStream.close();
             xmlEncoder.close();
         }
         catch(Exception ex){
